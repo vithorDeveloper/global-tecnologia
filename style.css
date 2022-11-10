@@ -1,0 +1,348 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Telugu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,0.304359243697479) 0%, rgba(69,169,252,0.304359243697479) 100%);
+}
+
+div.logo{
+  height: 17.3rem;
+
+  text-align: center;
+
+  margin-top:  2rem;
+
+  background: rgb(97, 97, 255);
+}
+
+div.logo img{
+  width: 20rem;
+}
+
+header img{
+  width: 100%;  
+}
+
+main{
+  width: 90%;
+
+  margin: auto;
+}
+
+main strong,
+.tecnologias p,
+.definicao strong,
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main div.box,
+main div.box2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background: rgba(255, 255, 255);
+  box-shadow: 1px -2px 10px 1px rgba(114, 114, 118, 0.6);
+  backdrop-filter: blur(3px);
+  border-radius: 2rem;
+
+  margin-top: 4rem;
+
+  padding: 5rem 0 9rem;
+
+  position: relative;
+
+  transition: all 0.6s;
+}
+
+main div.box:hover{
+  transform: scale(1.1);
+}
+
+main div.box2:hover{
+  transform: scale(1.1);
+}
+
+main div.box{
+  padding-right: 3rem;
+}
+
+main div.box2{
+  padding-left: 3rem;  
+}
+
+main p,
+.definicao p{
+  font-size: 1.2rem
+}
+
+main img{
+  width: 15rem;
+}
+
+main button{
+  width: 100%;
+
+  padding: 2rem;
+
+  background: rgba(252, 3, 3, 0.6);
+  color: white;
+
+  border: none;
+  border-radius: 0 0 2rem 2rem;
+
+  position: absolute;
+  bottom: 0;
+  left:0;
+
+  cursor: pointer;
+
+  transition: background 0.5s;
+}
+
+main button:hover {
+  background-color: rgb(203, 46, 46);
+}
+
+.tecnologias{
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  margin: 3rem 0;
+}
+
+.tecnologias img{
+  width: 10rem;
+
+  transition: all 0.5s;
+}
+
+.tecnologias img:hover{
+  transform: scale(1.2);
+}
+
+h2{
+  text-align: center;
+
+  margin-top: 3rem;
+
+  padding: 2rem;
+}
+
+.definicao{
+  width: 90%;
+
+  margin: auto;
+}
+
+.definicao p{
+  font-size: 1.4rem;
+}
+
+div.linha{
+  border: 1px solid rgb(68, 68, 68);
+  margin: 1.2rem;
+}
+
+.article-h2-2,
+.article-h2-3{
+  margin: 0;
+  padding-bottom: 0;
+}
+
+footer{
+  background:  rgba(70, 70, 70, 0.428);
+
+  margin-top: 4rem;
+
+  padding: 2rem;
+}
+
+footer div{
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer img#instagran,
+footer img#zap,
+footer img#gmail{
+    width: 30px;
+    margin-top: 1.3rem;
+
+    margin-right: 1rem;
+}
+
+footer a{
+  color: black;
+
+  font-size: 1.5rem;
+
+  padding-bottom: 1rem;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+@media (min-width: 1000px){
+  header{
+    display: flex;
+    gap: 0.2rem;
+  }
+
+  header img{
+    width: 50%;
+    height: 50%;
+  }
+
+  main{
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+  
+    grid-template-areas: 
+    "a b" 
+    "c d"
+    "e f "
+    "g h";
+  }
+  
+    div.um{
+      grid-area: a;
+    }
+    
+    div.dois{
+      grid-area: b;
+    }
+    
+    div.tres{
+      grid-area: c;
+    }
+    
+    div.quatro{
+      grid-area: d;
+    }
+    
+    div.cinco{
+      grid-area: e;
+    }
+    
+    div.seis{
+      grid-area: f;
+    }
+    
+    div.sete{
+      grid-area: g;
+    }
+
+    div.oito{
+      grid-area: h;
+    }
+
+    main div.box,
+    main div.box2{
+      padding: 1rem 0  5.7rem;
+    }
+
+    main div.box2{
+      padding-left: 1rem;
+    }
+
+    .tecnologias img{
+      width: 15rem;
+    }
+
+    .definicao{
+      width: 80%;
+
+      margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px){
+  main{
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+  
+    grid-template-areas: 
+    "a b c d"
+    "e f g h";
+  }
+  
+    div.um{
+      grid-area: a;
+    }
+    
+    div.dois{
+      grid-area: b;
+    }
+    
+    div.tres{
+      grid-area: c;
+    }
+    
+    div.quatro{
+      grid-area: d;
+    }
+    
+    div.cinco{
+      grid-area: e;
+    }
+    
+    div.seis{
+      grid-area: f;
+    }
+    
+    div.sete{
+      grid-area: g;
+    }
+
+    div.oito{
+      grid-area: h;
+    }
+
+    main div.box,
+    main div.box2{
+      padding: 1rem 0 6rem 1.5rem;
+    }
+
+    .tecnologias img{
+      width: 18rem;
+    }
+
+    footer div{
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    footer img{
+      margin-left: 3rem;
+    }
+
+    .definicao p{
+      font-size: 1.5rem;
+    }
+}
+    
